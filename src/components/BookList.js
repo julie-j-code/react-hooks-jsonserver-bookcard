@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import Book from "./BookCard";
 
 export default function BookList() {
   const [books, setBooks] = useState([]);
@@ -16,9 +17,14 @@ export default function BookList() {
       {books.length === 0 ? (
         <div>loading...</div>
       ) : (
-        <pre>
-          <code>{JSON.stringify(books, null, 4)}</code>
-        </pre>
+        // <pre>
+        //   <code>{JSON.stringify(books, null, 4)}</code>
+        // </pre>
+                <div>
+                {books.map(b => (
+                  <Book data={b} key={b.id} />
+                ))}
+              </div>
       )}
     </>
   );
