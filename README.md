@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Additional installations
 
-npm i -g json-server requiring additional file db.json
+npm i -g jsonserver requiring additional file db.json
 npm install semantic-ui-react
 npm install semantic-ui-react semantic-ui-css requiring additional in index.js :
 import "semantic-ui-css/semantic.min.css";
