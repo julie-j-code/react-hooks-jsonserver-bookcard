@@ -10,12 +10,18 @@ export const cartContext=createContext();
 
 function App() {
   // finira par être un tableau d'objets, mais pour le moment, n'est qu'un tableau vide
-  const [cart, setCart] = useState([]);
+  // const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState({});
 
   function addToCart(item) {
     console.log("item", item);
-    setCart([...cart, item]);
-    console.log("cart", cart);
+    if (!cart[item.id]) {
+      cart[item.id] = item;
+      cart[item.id].quantity = 1;
+    } else {
+      cart[item.id].quantity += 1;
+    }
+    setCart({ ...cart });
   }
 
   const contextValue = { cart, addToCart };
