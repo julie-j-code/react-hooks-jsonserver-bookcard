@@ -27,11 +27,22 @@ export default function CartDetails() {
                         //   ne pas oublier d'ajouter une clée unique pour chaque row
                         <Table.Row key={cart[key].id}>
                             <Table.Cell>
-                                <Header as="h2" textAlign="center">
+                                {/* <Header as="h2" textAlign="center">
                                     <button onClick={() => removeFromCart(cart[key])}>-</button>{" "}
                                     <button onClick={() => addToCart(cart[key])}>+</button>{" "}
                                     {cart[key].quantity}
-                                </Header>
+                                </Header> */}
+                                <Icon
+                                    name="minus square outline"
+                                    onClick={() => removeFromCart(cart[key])}
+                                    style={{ cursor: "pointer" }}
+                                />
+                                {cart[key].quantity}{" "}
+                                <Icon
+                                    name="plus square outline"
+                                    onClick={() => addToCart(cart[key])}
+                                    style={{ cursor: "pointer" }}
+                                />
                             </Table.Cell>
                             <Table.Cell singleLine>{cart[key].title}</Table.Cell>
                             <Table.Cell textAlign="right">{cart[key].price} €</Table.Cell>
