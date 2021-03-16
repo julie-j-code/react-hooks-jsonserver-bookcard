@@ -24,7 +24,15 @@ function App() {
     setCart({ ...cart });
   }
 
-  const contextValue = { cart, addToCart };
+  function countCartArticles() {
+    let total = 0;
+    Object.keys(cart).map(key => (total += cart[key].quantity));
+    return total;
+  }
+
+  // const contextValue = { cart, addToCart, countCartArticles:countCartArticles };
+  const contextValue = { cart, addToCart, countCartArticles };
+
 
   return (
     <>

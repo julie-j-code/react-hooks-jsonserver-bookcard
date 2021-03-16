@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useContext } from "react";
+import { CartContext } from "../App";
 
-const CartSummary = () => {
-    return (
-        <div>
-            <h4>Caddie (1)</h4>
-        </div>
-    );
-};
-
-export default CartSummary;
+export default function CartSummary() {
+  const { countCartArticles } = useContext(CartContext);
+  return (
+    <>
+      <h4>Caddie ({countCartArticles()})</h4>
+    </>
+  );
+}
