@@ -32,8 +32,18 @@ function App() {
     return total;
   }
 
+  function removeFromCart(item) {
+    if (cart[item.id].quantity !== 1) {
+      cart[item.id].quantity = cart[item.id].quantity - 1;
+    } else {
+      delete cart[item.id];
+    }
+    setCart({ ...cart });
+    console.log("cart", cart);
+  }
+
   // const contextValue = { cart, addToCart, countCartArticles:countCartArticles };
-  const contextValue = { cart, addToCart, countCartArticles };
+  const contextValue = { cart, addToCart, countCartArticles, removeFromCart };
 
 
   return (
