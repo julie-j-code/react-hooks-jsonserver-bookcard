@@ -1,12 +1,14 @@
-import React, {useState, createContext} from "react";
+import React, { useState, createContext } from "react";
 import "./App.css";
 import BookList from "./components/BookList";
 import CartSummary from "./components/CartSummary";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import CartDetails from "./components/CartDetails";
 
 // pour le menu et son container
 import { Container, Menu, Icon } from "semantic-ui-react";
 
-export const cartContext=createContext();
+export const CartContext = createContext();
 
 function App() {
   // finira par être un tableau d'objets, mais pour le moment, n'est qu'un tableau vide
@@ -36,18 +38,26 @@ function App() {
 
   return (
     <>
-      <h1>React Campus Shop</h1>
-      <Container>
-        <Menu stackable>
-          <Menu.Item>Campus Shop</Menu.Item>
-          <Menu.Item>
-            {/* CartSummary qui doit pouvoir être accessible depuis n'importe lequel des components...
-            d'où l'intérêt d'avoir recours à Context... */}
-            <CartSummary></CartSummary>
-          </Menu.Item>
-        </Menu>
-      </Container>
-      <BookList />
+      <Router>
+        <CartContext.Provider value={contextValue}>
+          <Container>
+            <Menu stackable>
+              <Menu.Item>
+                <Link to="/">Campus Shop</Link>
+              </Menu.Item>
+              <Menu.Item>
+                <Link to="/cart">
+                  <CartSummary />
+                </Link>
+              </Menu.Item>
+            </Menu>
+          </Container>
+          <Switch>
+            <Route path="/cart" component={CartDetails} />
+            <Route path="/" component={BookList} />
+          </Switch>
+        </CartContext.Provider>
+      </Router>
     </>
   );
 }

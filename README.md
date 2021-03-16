@@ -7,6 +7,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 `npm install semantic-ui-react semantic-ui-css` requiring additional in index.js :
 `import "semantic-ui-css/semantic.min.css";`
 
+`npm install --save react-router-dom`
+with import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
+
 
 ## Available Scripts
 
