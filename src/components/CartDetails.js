@@ -4,11 +4,12 @@ import { Header, Table, Icon } from "semantic-ui-react";
 
 export default function CartDetails() {
     // à récupérer depuis le context
-    const { cart, addToCart, removeFromCart } = useContext(CartContext);
+    const { cart, addToCart, removeFromCart, emptyCart } = useContext(CartContext);
     return (
         <>
             {/* <div>{JSON.stringify(cart, null, 4)}</div> */}
 
+            <button onClick={emptyCart}>vider le caddie</button>
             <Table celled padded>
                 <Table.Header>
                     <Table.Row>

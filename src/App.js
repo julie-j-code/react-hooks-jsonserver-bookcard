@@ -1,4 +1,4 @@
-import React, { useState, createContext } from "react";
+import React, { useState, createContext, useEffect } from "react";
 import "./App.css";
 import BookList from "./components/BookList";
 import CartSummary from "./components/CartSummary";
@@ -10,11 +10,30 @@ import { Container, Menu, Icon } from "semantic-ui-react";
 
 export const CartContext = createContext();
 
+// pour localStorage 
+const CART_KEY = "react-shop";
+
 function App() {
-  // finira par être un tableau d'objets, mais pour le moment, n'est qu'un tableau vide
-  // const [cart, setCart] = useState([]);
+
   const [cart, setCart] = useState({});
 
+  // on souhaite que useEffect ne s'execute que lorsque notre component est monté
+  // pour ça, on utilise en deuxième argument un tableau vide []
+  useEffect(() => {
+    const cartFromStorage = localStorage.getItem(CART_KEY);
+    if (cartFromStorage !== null) {
+      setCart(JSON.parse(cartFromStorage));
+    }
+  }, []);
+
+  // le deuxième useEffect permet d'insérer du contenu dans localStorage
+  useEffect(() => {
+    // on ne peut mettre que des strings dans localStorage
+    localStorage.setItem(CART_KEY, JSON.stringify(cart));
+  }, [cart]);
+
+
+ 
   function addToCart(item) {
     console.log("item", item);
     if (!cart[item.id]) {
@@ -42,8 +61,17 @@ function App() {
     console.log("cart", cart);
   }
 
+  function emptyCart() {
+    const response = window.confirm(
+      "Etes-vous vous sûr de vouloir vider le caddie ? "
+    );
+    if (response) {
+      setCart({});
+    }
+  }
+
   // const contextValue = { cart, addToCart, countCartArticles:countCartArticles };
-  const contextValue = { cart, addToCart, countCartArticles, removeFromCart };
+  const contextValue = { cart, addToCart, countCartArticles, removeFromCart, emptyCart };
 
 
   return (
