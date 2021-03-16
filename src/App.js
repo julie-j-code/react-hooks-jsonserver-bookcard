@@ -30,8 +30,9 @@ function App() {
   useEffect(() => {
     // on ne peut mettre que des strings dans localStorage
     localStorage.setItem(CART_KEY, JSON.stringify(cart));
-    document.title = `caddie(${Object.keys(cart).length})`;
-  }, [cart]);
+    // document.title = `caddie(${Object.keys(cart).length})`;
+    document.title = `caddie(${countCartArticles()})`;
+  }, [cart, countCartArticles]);
 
 
 
