@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
+// puisque on importe cartContext pour pouvoir utiliser le panier depuis ce component
+// on importe le hook useContext
 import { Card, Image } from "semantic-ui-react";
+import { cartContext } from "../App";
 
 export default function BookCard({ data }) {
+  const { addToCart } = useContext(cartContext);
+  // const context = useContext(cartContext);
+  // context.addToCart;
   return (
     <Card>
       <Image src={data.image} wrapped ui={false} style={{ width: 120 }} />
@@ -13,7 +19,9 @@ export default function BookCard({ data }) {
         <Card.Description></Card.Description>
       </Card.Content>
       <Card.Content extra>
-        <button>+ ajouter au caddie</button>
+        <button onClick={() => addToCart({ id: data.id, quantity: 1 })}>
+          + ajouter au caddie
+        </button>
       </Card.Content>
     </Card>
   );
