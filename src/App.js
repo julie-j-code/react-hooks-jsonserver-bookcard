@@ -34,7 +34,7 @@ function App() {
   }, [cart]);
 
 
- 
+
   function addToCart(item) {
     console.log("item", item);
     if (!cart[item.id]) {
@@ -86,7 +86,7 @@ function App() {
               </Menu.Item>
               <Menu.Item>
                 <Link to="/cart">
-                  <CartSummary />
+                  <Icon name="cart" size="small" /> <CartSummary />
                 </Link>
               </Menu.Item>
             </Menu>

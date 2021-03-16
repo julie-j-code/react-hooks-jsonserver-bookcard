@@ -5,7 +5,7 @@ export default function CartSummary() {
   const { countCartArticles } = useContext(CartContext);
   return (
     <>
-      <h4>Caddie ({countCartArticles()})</h4>
+      <span>Caddie ({countCartArticles()})</span>
     </>
   );
 }
