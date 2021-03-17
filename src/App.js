@@ -102,7 +102,7 @@ function App() {
               React Hooks Books Shop
     </Header>
             <Segment attached>
-              L'occasion de travailler avec des Hooks, moi qui ne connaissait que l'utilisation des class components. Je préfère ne pas donner mon avis. S'agit de se mettre en conformité avec les pré-requis du marché du travail. Ici, useState, useEffect et surtout useContext. Le panier est enregistré dans localStorage. La data fournie par json-server. Le style importé de semantic-ui que je découvrais là aussi.
+              L'occasion de travailler avec des Hooks, moi qui ne connaissais que l'utilisation des class components. Je préfère ne pas donner mon avis. S'agit de se mettre en conformité avec les pré-requis du marché du travail. Ici, useState, useEffect et surtout useContext. Le panier est enregistré dans localStorage. La data fournie par json-server. Le style importé de semantic-ui que je découvrais là aussi.
     </Segment>
             <Switch>
               <Route path="/cart" component={CartDetails} />
