@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { CartContext } from "../App";
-import { Header, Table, Icon } from "semantic-ui-react";
+import { Table, Icon, Button } from "semantic-ui-react";
 
 export default function CartDetails() {
     // à récupérer depuis le context
@@ -9,7 +9,7 @@ export default function CartDetails() {
         <>
             {/* <div>{JSON.stringify(cart, null, 4)}</div> */}
 
-            <button onClick={emptyCart}>vider le caddie</button>
+            <button onClick={emptyCart} class="ui button">vider le caddie</button>
             <Table celled padded>
                 <Table.Header>
                     <Table.Row>

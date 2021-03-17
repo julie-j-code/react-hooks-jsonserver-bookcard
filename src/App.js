@@ -87,7 +87,7 @@ function App() {
     <>
       <Router>
         <CartContext.Provider value={contextValue}>
-          <Container>
+        <Container>
             <Menu stackable>
               <Menu.Item>
                 <Link to="/">Campus Shop</Link>
@@ -98,11 +98,11 @@ function App() {
                 </Link>
               </Menu.Item>
             </Menu>
-          </Container>
           <Switch>
             <Route path="/cart" component={CartDetails} />
             <Route path="/" component={BookList} />
           </Switch>
+          </Container>
         </CartContext.Provider>
       </Router>
     </>
