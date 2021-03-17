@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "48218a605fcff22de86831c6543be512",
+    "revision": "1865d94f4dd3027a1731cbb1bccecd9a",
     "url": "/react-hooks-jsonserver-bookcard/index.html"
   },
   {
-    "revision": "5da51439461970f46925",
+    "revision": "4613806b595a7a2a4f57",
     "url": "/react-hooks-jsonserver-bookcard/static/css/2.03826bf9.chunk.css"
   },
   {
-    "revision": "231e1238b1579325f08c",
+    "revision": "10b59dd7c4736d3df89a",
     "url": "/react-hooks-jsonserver-bookcard/static/css/main.fe19159e.chunk.css"
   },
   {
-    "revision": "5da51439461970f46925",
-    "url": "/react-hooks-jsonserver-bookcard/static/js/2.ece6ddcb.chunk.js"
+    "revision": "4613806b595a7a2a4f57",
+    "url": "/react-hooks-jsonserver-bookcard/static/js/2.8da9630e.chunk.js"
   },
   {
     "revision": "1a1a42c150bd05496b97b265c552c789",
-    "url": "/react-hooks-jsonserver-bookcard/static/js/2.ece6ddcb.chunk.js.LICENSE.txt"
+    "url": "/react-hooks-jsonserver-bookcard/static/js/2.8da9630e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "231e1238b1579325f08c",
-    "url": "/react-hooks-jsonserver-bookcard/static/js/main.fd5682c9.chunk.js"
+    "revision": "10b59dd7c4736d3df89a",
+    "url": "/react-hooks-jsonserver-bookcard/static/js/main.7e2b54b2.chunk.js"
   },
   {
     "revision": "12b86073a7bcd8d06d72",
