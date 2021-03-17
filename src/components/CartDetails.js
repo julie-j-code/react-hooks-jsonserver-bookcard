@@ -47,7 +47,9 @@ export default function CartDetails() {
                             <Table.Cell singleLine>{cart[key].title}</Table.Cell>
                             <Table.Cell textAlign="right">{cart[key].price} €</Table.Cell>
                             <Table.Cell textAlign="right">
-                                {cart[key].quantity * cart[key].price} €
+                                {/* {cart[key].quantity * cart[key].price} € */}
+                                {/* pour arrondir à 2 chiffres après la virgule. js natif */}
+                                {(cart[key].quantity * cart[key].price).toFixed(2)} €
               </Table.Cell>
                         </Table.Row>
                     ))}
