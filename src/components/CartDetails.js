@@ -50,7 +50,7 @@ export default function CartDetails() {
                                 {/* {cart[key].quantity * cart[key].price} € */}
                                 {/* pour arrondir à 2 chiffres après la virgule. js natif */}
                                 {(cart[key].quantity * cart[key].price).toFixed(2)} €
-              </Table.Cell>
+                            </Table.Cell>
                         </Table.Row>
                     ))}
                 </Table.Body>

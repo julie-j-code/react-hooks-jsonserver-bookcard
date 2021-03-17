@@ -10,7 +10,8 @@ export default function BookCard({ data }) {
   // context.addToCart;
   return (
     <Card>
-      <Image src={data.image} wrapped ui={false} style={{ width: 120 }} />
+      {/* <Image src={data.image} wrapped ui={false} style={{ width: 120 }} /> */}
+      <Image src={data.image} className="ui fluid image" />
       <Card.Content>
         <Card.Header>{data.title}</Card.Header>
         <Card.Meta>

@@ -31,12 +31,11 @@ export default function BookList() {
               // </div>
 
               // grid basée sur https://github.com/Semantic-Org/Semantic-UI-React/blob/master/docs/src/layouts/ResponsiveLayout.js
-              <Grid columns={4} doubling stackable>
+              <Grid columns={4} doubling stackable className="ui for column grid">
               {books.map(b => (
                 <Grid.Column key={b.id}>
-                  <Segment>
+                  {/* <Segment></Segment> */}
                     <Book data={b} />
-                  </Segment>
                 </Grid.Column>
               ))}
             </Grid>

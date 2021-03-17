@@ -9,7 +9,7 @@
             "publisher": "O'Reilly Media",
             "year": 2010,
             "price": 29.99,
-            "image": "https://images-na.ssl-images-amazon.com/images/I/51%2BSiphz7AL._SL200_.jpg"
+            "image": "https://images-na.ssl-images-amazon.com/images/I/51%2BSiphz7AL._SL400_.jpg"
         },
         {
             "id": 9780596517748,
@@ -21,7 +21,7 @@
             "publisher": "O'Reilly Media",
             "year": 2008,
             "price": 29.99,
-            "image": "https://images-na.ssl-images-amazon.com/images/I/5131OWtQRaL._SL200_.jpg"
+            "image": "https://images-na.ssl-images-amazon.com/images/I/5131OWtQRaL._SL400_.jpg"
         },
         {
             "id": 9781449331818,
@@ -33,7 +33,7 @@
             "publisher": "O'Reilly Media",
             "year": 2012,
             "price": 44.99,
-            "image": "https://images-na.ssl-images-amazon.com/images/I/51jEMnP6UGL._SL200_.jpg"
+            "image": "https://images-na.ssl-images-amazon.com/images/I/51jEMnP6UGL._SL400_.jpg"
         },
         {
             "id": 9781593279509,
@@ -45,7 +45,7 @@
             "publisher": "No Starch Press",
             "year": 2018,
             "price": 39.95,
-            "image": "https://images-na.ssl-images-amazon.com/images/I/51I9naPg55L._SL200_.jpg"
+            "image": "https://images-na.ssl-images-amazon.com/images/I/51I9naPg55L._SL400_.jpg"
         },
         {
             "id": 9781617292859,
@@ -57,7 +57,7 @@
             "publisher": "Manning Publications",
             "year": 2016,
             "price": 44.99,
-            "image": "https://images-na.ssl-images-amazon.com/images/I/51sxvZlbH5L._SL200_.jpg"
+            "image": "https://images-na.ssl-images-amazon.com/images/I/51sxvZlbH5L._SL400_.jpg"
         },
         {
             "id": 9780132350884,
@@ -69,7 +69,7 @@
             "publisher": "Prentice Hall",
             "year": 2008,
             "price": 34.47,
-            "image": "https://images-na.ssl-images-amazon.com/images/I/41TINACY3hL._SL200_.jpg"
+            "image": "https://images-na.ssl-images-amazon.com/images/I/41TINACY3hL._SL400_.jpg"
         },
         {
             "id": 9780201633610,
@@ -94,7 +94,7 @@
             "publisher": "Prentice Hall",
             "year": 2008,
             "price": 34.47,
-            "image": "https://images-na.ssl-images-amazon.com/images/I/51szD9HC9pL._SL200_.jpg"
+            "image": "https://images-na.ssl-images-amazon.com/images/I/51szD9HC9pL._SL400_.jpg"
         }
     ]
 }
