@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/react-hooks-jsonserver-bookcard/static/css/main.fe19159e.chunk.css",
+    "main.js": "/react-hooks-jsonserver-bookcard/static/js/main.20e49a11.chunk.js",
+    "main.js.map": "/react-hooks-jsonserver-bookcard/static/js/main.20e49a11.chunk.js.map",
+    "runtime-main.js": "/react-hooks-jsonserver-bookcard/static/js/runtime-main.fe0de52e.js",
+    "runtime-main.js.map": "/react-hooks-jsonserver-bookcard/static/js/runtime-main.fe0de52e.js.map",
+    "static/css/2.03826bf9.chunk.css": "/react-hooks-jsonserver-bookcard/static/css/2.03826bf9.chunk.css",
+    "static/js/2.8da9630e.chunk.js": "/react-hooks-jsonserver-bookcard/static/js/2.8da9630e.chunk.js",
+    "static/js/2.8da9630e.chunk.js.map": "/react-hooks-jsonserver-bookcard/static/js/2.8da9630e.chunk.js.map",
+    "index.html": "/react-hooks-jsonserver-bookcard/index.html",
+    "precache-manifest.69e4bebb53b1036c4b44e77ebe070984.js": "/react-hooks-jsonserver-bookcard/precache-manifest.69e4bebb53b1036c4b44e77ebe070984.js",
+    "service-worker.js": "/react-hooks-jsonserver-bookcard/service-worker.js",
+    "static/css/2.03826bf9.chunk.css.map": "/react-hooks-jsonserver-bookcard/static/css/2.03826bf9.chunk.css.map",
+    "static/css/main.fe19159e.chunk.css.map": "/react-hooks-jsonserver-bookcard/static/css/main.fe19159e.chunk.css.map",
+    "static/js/2.8da9630e.chunk.js.LICENSE.txt": "/react-hooks-jsonserver-bookcard/static/js/2.8da9630e.chunk.js.LICENSE.txt",
+    "static/media/semantic.min.css": "/react-hooks-jsonserver-bookcard/static/media/outline-icons.ef60a4f6.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fe0de52e.js",
+    "static/css/2.03826bf9.chunk.css",
+    "static/js/2.8da9630e.chunk.js",
+    "static/css/main.fe19159e.chunk.css",
+    "static/js/main.20e49a11.chunk.js"
+  ]
+}
