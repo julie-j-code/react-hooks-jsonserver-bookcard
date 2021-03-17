@@ -2,6 +2,7 @@
   "name": "campus-react-shop",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://julie-j-code.github.io/react-hooks-jsonserver-bookcard",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -15,6 +16,8 @@
     "semantic-ui-react": "^2.0.3"
   },
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "start": "react-scripts start",
     "jsnsrv": "json-server --watch db.json --port 3001",
     "build": "react-scripts build",
