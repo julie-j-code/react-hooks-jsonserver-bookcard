@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/react-hooks-jsonserver-bookcard/static/css/main.fe19159e.chunk.css",
-    "main.js": "/react-hooks-jsonserver-bookcard/static/js/main.7e2b54b2.chunk.js",
-    "main.js.map": "/react-hooks-jsonserver-bookcard/static/js/main.7e2b54b2.chunk.js.map",
+    "main.js": "/react-hooks-jsonserver-bookcard/static/js/main.c6960a89.chunk.js",
+    "main.js.map": "/react-hooks-jsonserver-bookcard/static/js/main.c6960a89.chunk.js.map",
     "runtime-main.js": "/react-hooks-jsonserver-bookcard/static/js/runtime-main.fe0de52e.js",
     "runtime-main.js.map": "/react-hooks-jsonserver-bookcard/static/js/runtime-main.fe0de52e.js.map",
     "static/css/2.03826bf9.chunk.css": "/react-hooks-jsonserver-bookcard/static/css/2.03826bf9.chunk.css",
     "static/js/2.8da9630e.chunk.js": "/react-hooks-jsonserver-bookcard/static/js/2.8da9630e.chunk.js",
     "static/js/2.8da9630e.chunk.js.map": "/react-hooks-jsonserver-bookcard/static/js/2.8da9630e.chunk.js.map",
     "index.html": "/react-hooks-jsonserver-bookcard/index.html",
-    "precache-manifest.cdc9daf0f98f8bfda66d6e43faa7a01e.js": "/react-hooks-jsonserver-bookcard/precache-manifest.cdc9daf0f98f8bfda66d6e43faa7a01e.js",
+    "precache-manifest.07323ab1a4418799a65e8257eb0c38c6.js": "/react-hooks-jsonserver-bookcard/precache-manifest.07323ab1a4418799a65e8257eb0c38c6.js",
     "service-worker.js": "/react-hooks-jsonserver-bookcard/service-worker.js",
     "static/css/2.03826bf9.chunk.css.map": "/react-hooks-jsonserver-bookcard/static/css/2.03826bf9.chunk.css.map",
     "static/css/main.fe19159e.chunk.css.map": "/react-hooks-jsonserver-bookcard/static/css/main.fe19159e.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.03826bf9.chunk.css",
     "static/js/2.8da9630e.chunk.js",
     "static/css/main.fe19159e.chunk.css",
-    "static/js/main.7e2b54b2.chunk.js"
+    "static/js/main.c6960a89.chunk.js"
   ]
 }

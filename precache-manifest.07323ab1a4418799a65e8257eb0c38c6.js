@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1865d94f4dd3027a1731cbb1bccecd9a",
+    "revision": "0832bec1b465ae7437d8305b2c2d290e",
     "url": "/react-hooks-jsonserver-bookcard/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-hooks-jsonserver-bookcard/static/css/2.03826bf9.chunk.css"
   },
   {
-    "revision": "10b59dd7c4736d3df89a",
+    "revision": "530c932396f3efd21926",
     "url": "/react-hooks-jsonserver-bookcard/static/css/main.fe19159e.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-hooks-jsonserver-bookcard/static/js/2.8da9630e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "10b59dd7c4736d3df89a",
-    "url": "/react-hooks-jsonserver-bookcard/static/js/main.7e2b54b2.chunk.js"
+    "revision": "530c932396f3efd21926",
+    "url": "/react-hooks-jsonserver-bookcard/static/js/main.c6960a89.chunk.js"
   },
   {
     "revision": "12b86073a7bcd8d06d72",
