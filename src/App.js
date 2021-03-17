@@ -16,6 +16,9 @@ const CART_KEY = "react-shop";
 function App() {
 
   const [cart, setCart] = useState({});
+  // morceau d'état dédié au comptage des articles. 
+  // qui n'est autre qu'un compteur, dont la valeur par défaut est donc 0
+  const [nbArticles, setNbArticles] = useState(0);
 
   // on souhaite que useEffect ne s'execute que lorsque notre component est monté
   // pour ça, on utilise en deuxième argument un tableau vide []
@@ -31,8 +34,11 @@ function App() {
     // on ne peut mettre que des strings dans localStorage
     localStorage.setItem(CART_KEY, JSON.stringify(cart));
     // document.title = `caddie(${Object.keys(cart).length})`;
-    document.title = `caddie(${countCartArticles()})`;
-  }, [cart, countCartArticles]);
+  //   document.title = `caddie(${countCartArticles()})`;
+  // }, [cart, countCartArticles]);
+  // au lieu d'utiliser une fonction dédiée, on va utiliser un morceau d'état dédié au comptage des articles
+  document.title = `caddie(${nbArticles})`;
+}, [cart, nbArticles]);
 
 
 
@@ -50,6 +56,7 @@ function App() {
   function countCartArticles() {
     let total = 0;
     Object.keys(cart).map(key => (total += cart[key].quantity));
+    setNbArticles(total);
     return total;
   }
 
