@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import CartDetails from "./components/CartDetails";
 
 // pour le menu et son container
-import { Container, Menu, Icon } from "semantic-ui-react";
+import { Container, Menu, Icon, Segment, Header } from "semantic-ui-react";
 
 export const CartContext = createContext();
 
@@ -34,11 +34,11 @@ function App() {
     // on ne peut mettre que des strings dans localStorage
     localStorage.setItem(CART_KEY, JSON.stringify(cart));
     // document.title = `caddie(${Object.keys(cart).length})`;
-  //   document.title = `caddie(${countCartArticles()})`;
-  // }, [cart, countCartArticles]);
-  // au lieu d'utiliser une fonction dédiée, on va utiliser un morceau d'état dédié au comptage des articles
-  document.title = `caddie(${nbArticles})`;
-}, [cart, nbArticles]);
+    //   document.title = `caddie(${countCartArticles()})`;
+    // }, [cart, countCartArticles]);
+    // au lieu d'utiliser une fonction dédiée, on va utiliser un morceau d'état dédié au comptage des articles
+    document.title = `caddie(${nbArticles})`;
+  }, [cart, nbArticles]);
 
 
 
@@ -87,10 +87,10 @@ function App() {
     <>
       <Router>
         <CartContext.Provider value={contextValue}>
-        <Container>
+          <Container>
             <Menu stackable>
               <Menu.Item>
-                <Link to="/">Campus Shop</Link>
+                <Link to="/">React Campus Shop</Link>
               </Menu.Item>
               <Menu.Item>
                 <Link to="/cart">
@@ -98,10 +98,16 @@ function App() {
                 </Link>
               </Menu.Item>
             </Menu>
-          <Switch>
-            <Route path="/cart" component={CartDetails} />
-            <Route path="/" component={BookList} />
-          </Switch>
+            <Header as='h2' attached='top'>
+              React Hooks Books Shop
+    </Header>
+            <Segment attached>
+              L'occasion de travailler avec des Hooks, moi qui ne connaissait que l'utilisation des class components. Je préfère ne pas donner mon avis. S'agit de se mettre en conformité avec les pré-requis du marché du travail. Ici, useState, useEffect et surtout useContext. Le panier est enregistré dans localStorage. La data fournie par json-server. Le style importé de semantic-ui que je découvrais là aussi.
+    </Segment>
+            <Switch>
+              <Route path="/cart" component={CartDetails} />
+              <Route path="/" component={BookList} />
+            </Switch>
           </Container>
         </CartContext.Provider>
       </Router>
